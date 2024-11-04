@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Result</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/products">Products</a>
+    </nav>
+    <div class="container">
+      <% if (success) { %>
+      <h1 class="success">Payment Successful!</h1>
+      <% } else { %>
+      <h1 class="failure">Payment Failed. Please try again.</h1>
+      <% } %>
+      <a href="/" class="btn">Back to Homepage</a>
+    </div>
+    <footer>
+      <p>&copy; 2023 E-Commerce Store</p>
+    </footer>
+  </body>
+</html>
